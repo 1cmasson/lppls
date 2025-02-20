@@ -6,7 +6,7 @@ This repository contains tools for analyzing and displaying Log-Periodic Power L
 
 The LPPLS model is used to detect bubbles and predict potential crash times in financial markets. This tool applies the LPPLS model to selected assets and visualizes the results.
 
-### Prerequisites
+## Prerequisites
 
 - Python 3.7+
 - pip (Python package installer)
@@ -51,7 +51,7 @@ python app.py
 ```
 5. Navigate to graphql playground at http://127.0.0.1:5000/graphql to interact with the API.
 
-### Frontend Setup (if applicable)
+### Frontend Setup
 
 1. Navigate to the frontend directory:
 
