@@ -6,10 +6,6 @@ This repository contains tools for analyzing and displaying Log-Periodic Power L
 
 The LPPLS model is used to detect bubbles and predict potential crash times in financial markets. This tool applies the LPPLS model to selected assets and visualizes the results.
 
-# LPPLS Analysis Project
-
-This project provides a backend API for performing Log-Periodic Power Law Singularity (LPPLS) analysis on financial data. The backend is built using Python with Flask and GraphQL, and it interacts with a database to store and retrieve data.
-
 ### Prerequisites
 
 - Python 3.7+
