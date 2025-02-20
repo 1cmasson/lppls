@@ -4,8 +4,8 @@ __pycache__/
 *$py.class
 venv/
 
-
 # JavaScript
+.next
 node_modules/
 /build
 .env.local
