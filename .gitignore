@@ -19,4 +19,8 @@ yarn-error.log*
 # IDEs and editors
 .vscode/
 .idea/
-*.swpbackend/backtest_output.log
+*.swp
+
+# Backtest logs
+backend/backtest_output.log
+backend/*.log
