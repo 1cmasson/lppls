@@ -4,6 +4,8 @@ import yfinance as yf
 from datetime import datetime, timedelta
 from lppls_model import LPPLSModel
 import numpy as np
+import json
+import pandas as pd
 
 @strawberry.type
 class PricePoint:
@@ -50,6 +52,66 @@ class Query:
 
 
         all_time = np.concatenate([time, future_time])
+        results = model.format_results(params, all_time)
+
+        return LPPLSResult(
+            results=[
+                LPPLSResultPoint(
+                    date=result['date'],
+                    actual_price=result['actual_price'],
+                    predicted_price=result['predicted_price']
+                )
+                for result in results
+            ]
+        )
+
+    @strawberry.field
+    def test_lppls_analysis(self) -> LPPLSResult:
+        """Test LPPLS analysis using sample bubble data from JSON file"""
+
+        # Load sample data
+        with open('sample_data.json', 'r') as f:
+            sample_data = json.load(f)
+
+        # Convert to arrays
+        dates = [datetime.strptime(item['date'], '%Y-%m-%d') for item in sample_data['data']]
+        prices = np.array([item['price'] for item in sample_data['data']])
+
+        # Calculate time in days from start
+        start_date = dates[0]
+        time = np.array([(d - start_date).days for d in dates])
+
+        print(f"\n{'='*60}")
+        print(f"LPPLS Model Test with Sample Bubble Data")
+        print(f"{'='*60}")
+        print(f"Data points: {len(time)}")
+        print(f"Date range: {dates[0].strftime('%Y-%m-%d')} to {dates[-1].strftime('%Y-%m-%d')}")
+        print(f"Price range: ${prices[0]:.2f} to ${prices[-1]:.2f}")
+        print(f"Price increase: {((prices[-1] / prices[0]) - 1) * 100:.1f}%")
+
+        # Fit LPPLS model
+        model = LPPLSModel(time, prices, start_date)
+        params = model.fit()
+
+        tc, m, w, a, b, c1, c2 = params
+
+        print(f"\n{'='*60}")
+        print(f"LPPLS Parameters:")
+        print(f"{'='*60}")
+        print(f"tc (critical time):     {tc:.2f} days ({(start_date + timedelta(days=int(tc))).strftime('%Y-%m-%d')})")
+        print(f"m (power law exponent): {m:.4f}")
+        print(f"w (log-periodic freq):  {w:.4f}")
+        print(f"a (price level):        {a:.2f}")
+        print(f"b (amplitude):          {b:.2f}")
+        print(f"c1 (cos amplitude):     {c1:.4f}")
+        print(f"c2 (sin amplitude):     {c2:.4f}")
+        print(f"{'='*60}\n")
+
+        # Generate predictions for existing data + 30 days future
+        future_days = 30
+        future_time = np.arange(time[-1] + 1, time[-1] + future_days + 1)
+        all_time = np.concatenate([time, future_time])
+
         results = model.format_results(params, all_time)
 
         return LPPLSResult(
