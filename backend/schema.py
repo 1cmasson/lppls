@@ -66,6 +66,75 @@ class Query:
         )
 
     @strawberry.field
+    def btc_lppls_analysis(self, start_date: Optional[str] = None, end_date: Optional[str] = None) -> LPPLSResult:
+        """Test LPPLS analysis using real BTC historical data from GitHub"""
+
+        # Load real BTC data
+        with open('BTC-USD.json', 'r') as f:
+            btc_data = json.load(f)
+
+        # Filter by date range if provided
+        if start_date:
+            btc_data = [d for d in btc_data if d['Date'] >= start_date]
+        if end_date:
+            btc_data = [d for d in btc_data if d['Date'] <= end_date]
+
+        if len(btc_data) < 50:
+            raise ValueError(f"Insufficient data points ({len(btc_data)}). Need at least 50 for reliable LPPLS analysis.")
+
+        # Convert to arrays
+        dates = [datetime.strptime(item['Date'], '%Y-%m-%d') for item in btc_data]
+        prices = np.array([float(item['Close']) for item in btc_data])
+
+        # Calculate time in days from start
+        start = dates[0]
+        time = np.array([(d - start).days for d in dates])
+
+        print(f"\n{'='*60}")
+        print(f"LPPLS Analysis on Real BTC Data")
+        print(f"{'='*60}")
+        print(f"Data points: {len(time)}")
+        print(f"Date range: {dates[0].strftime('%Y-%m-%d')} to {dates[-1].strftime('%Y-%m-%d')}")
+        print(f"Price range: ${prices[0]:.2f} to ${max(prices):.2f}")
+        print(f"Price increase: {((prices[-1] / prices[0]) - 1) * 100:.1f}%")
+
+        # Fit LPPLS model
+        model = LPPLSModel(time, prices, start)
+        params = model.fit()
+
+        tc, m, w, a, b, c1, c2 = params
+
+        print(f"\n{'='*60}")
+        print(f"LPPLS Parameters:")
+        print(f"{'='*60}")
+        print(f"tc (critical time):     {tc:.2f} days ({(start + timedelta(days=int(tc))).strftime('%Y-%m-%d')})")
+        print(f"m (power law exponent): {m:.4f}")
+        print(f"w (log-periodic freq):  {w:.4f}")
+        print(f"a (price level):        {a:.2f}")
+        print(f"b (amplitude):          {b:.2f}")
+        print(f"c1 (cos amplitude):     {c1:.4f}")
+        print(f"c2 (sin amplitude):     {c2:.4f}")
+        print(f"{'='*60}\n")
+
+        # Generate predictions for existing data + 30 days future
+        future_days = 30
+        future_time = np.arange(time[-1] + 1, time[-1] + future_days + 1)
+        all_time = np.concatenate([time, future_time])
+
+        results = model.format_results(params, all_time)
+
+        return LPPLSResult(
+            results=[
+                LPPLSResultPoint(
+                    date=result['date'],
+                    actual_price=result['actual_price'],
+                    predicted_price=result['predicted_price']
+                )
+                for result in results
+            ]
+        )
+
+    @strawberry.field
     def test_lppls_analysis(self) -> LPPLSResult:
         """Test LPPLS analysis using sample bubble data from JSON file"""
 
