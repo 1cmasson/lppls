@@ -1,0 +1,1200 @@
+======================================================================
+LPPLS MULTI-WINDOW BACKTEST COMPARISON
+======================================================================
+
+Testing window sizes: 30, 60, 90, 180, 365 days
+This will take ~30-45 minutes total...
+
+
+======================================================================
+TESTING 30-DAY WINDOW
+======================================================================
+
+======================================================================
+LPPLS EXHAUSTIVE BACKTEST
+======================================================================
+Crash threshold: 20%
+Lookforward period: 60 days
+Warning window: 60 days
+Test interval: 7 days
+LPPLS window: 30 days
+======================================================================
+
+Loaded 3607 days of BTC data
+Date range: 2014-09-17 to 2024-08-01
+Price range: $457.33 to $73083.50
+
+Finding all 20%+ crashes...
+Found 52 crashes:
+  2014-09-17: -29.9% over 18 days ($457 → $321)
+  2014-10-19: -20.1% over 60 days ($390 → $311)
+  2014-11-19: -53.2% over 56 days ($381 → $178)
+  2014-12-20: -46.0% over 25 days ($330 → $178)
+  2015-01-26: -20.6% over 10 days ($273 → $217)
+  2015-03-02: -20.5% over 43 days ($276 → $219)
+  2015-07-05: -22.6% over 50 days ($272 → $210)
+  2015-08-05: -25.3% over 19 days ($282 → $210)
+  2015-11-03: -22.9% over 8 days ($403 → $311)
+  2015-12-15: -21.7% over 31 days ($465 → $364)
+  2016-06-13: -22.3% over 50 days ($704 → $547)
+  2016-12-28: -20.3% over 14 days ($976 → $778)
+  2017-02-24: -20.1% over 28 days ($1174 → $938)
+  2017-05-24: -21.0% over 53 days ($2444 → $1930)
+  2017-06-24: -26.0% over 22 days ($2609 → $1930)
+  2017-08-13: -22.5% over 32 days ($4073 → $3155)
+  2017-11-08: -20.2% over 4 days ($7460 → $5950)
+  2017-12-09: -54.2% over 58 days ($15178 → $6955)
+  2018-01-09: -52.3% over 27 days ($14595 → $6955)
+  2018-02-09: -24.0% over 56 days ($8737 → $6636)
+  2018-03-12: -27.9% over 25 days ($9205 → $6636)
+  2018-04-14: -20.5% over 60 days ($7986 → $6350)
+  2018-05-15: -30.6% over 44 days ($8510 → $5903)
+  2018-07-24: -26.6% over 17 days ($8424 → $6185)
+  2018-09-20: -25.3% over 60 days ($6520 → $4871)
+  2018-10-21: -50.1% over 55 days ($6482 → $3237)
+  2018-11-21: -29.7% over 24 days ($4602 → $3237)
+  2019-06-26: -27.2% over 20 days ($13016 → $9478)
+  2019-08-01: -22.1% over 59 days ($10400 → $8104)
+  2019-09-01: -23.2% over 53 days ($9758 → $7493)
+  2019-10-25: -23.3% over 53 days ($8661 → $6641)
+  2020-01-12: -39.3% over 60 days ($8192 → $4971)
+  2020-02-12: -51.9% over 29 days ($10326 → $4971)
+  2021-01-07: -22.7% over 20 days ($39371 → $30433)
+  2021-02-21: -21.6% over 7 days ($57540 → $45138)
+  2021-03-24: -34.1% over 60 days ($52774 → $34771)
+  2021-04-24: -36.7% over 58 days ($50051 → $31677)
+  2021-05-25: -22.4% over 56 days ($38402 → $29807)
+  2021-09-05: -21.4% over 16 days ($51753 → $40694)
+  2021-10-15: -24.3% over 60 days ($61594 → $46613)
+  2021-11-15: -34.6% over 53 days ($63558 → $41558)
+  2021-12-16: -26.5% over 37 days ($47665 → $35030)
+  2022-03-10: -23.2% over 60 days ($39437 → $30297)
+  2022-04-10: -32.2% over 47 days ($42208 → $28628)
+  2022-05-11: -34.3% over 38 days ($28936 → $19018)
+  2022-06-11: -32.9% over 7 days ($28361 → $19018)
+  2022-07-28: -22.2% over 55 days ($23844 → $18547)
+  2022-09-10: -26.8% over 60 days ($21681 → $15881)
+  2022-10-25: -21.4% over 27 days ($20096 → $15787)
+  2023-07-13: -20.1% over 60 days ($31476 → $25163)
+  2024-03-13: -20.3% over 49 days ($73084 → $58254)
+  2024-05-20: -21.8% over 48 days ($71448 → $55849)
+
+Running LPPLS model every 7 days...
+  Progress: 0/489 (0.0%)
+  Progress: 20/489 (4.1%)
+  Progress: 40/489 (8.2%)
+  Progress: 60/489 (12.3%)
+  Progress: 80/489 (16.4%)
+  Progress: 100/489 (20.4%)
+  Progress: 120/489 (24.5%)
+  Progress: 140/489 (28.6%)
+  Progress: 160/489 (32.7%)
+  Progress: 180/489 (36.8%)
+  Progress: 200/489 (40.9%)
+  Progress: 220/489 (45.0%)
+  Progress: 240/489 (49.1%)
+  Progress: 260/489 (53.2%)
+  Progress: 280/489 (57.3%)
+  Progress: 300/489 (61.3%)
+  Progress: 320/489 (65.4%)
+  Progress: 340/489 (69.5%)
+  Progress: 360/489 (73.6%)
+  Progress: 380/489 (77.7%)
+  Progress: 400/489 (81.8%)
+  Progress: 420/489 (85.9%)
+  Progress: 440/489 (90.0%)
+  Progress: 460/489 (94.1%)
+  Progress: 480/489 (98.2%)
+
+LPPLS issued 0 warnings
+
+Evaluating signal accuracy...
+
+30-DAY WINDOW RESULTS:
+  Precision: 0.0%
+  Recall: 0.0%
+  F1 Score: 0.000
+  Avg Lead Time: 0.0 days
+  True Positives: 0
+  False Positives: 0
+  False Negatives: 52
+
+======================================================================
+TESTING 60-DAY WINDOW
+======================================================================
+
+======================================================================
+LPPLS EXHAUSTIVE BACKTEST
+======================================================================
+Crash threshold: 20%
+Lookforward period: 60 days
+Warning window: 60 days
+Test interval: 7 days
+LPPLS window: 60 days
+======================================================================
+
+Loaded 3607 days of BTC data
+Date range: 2014-09-17 to 2024-08-01
+Price range: $457.33 to $73083.50
+
+Finding all 20%+ crashes...
+Found 52 crashes:
+  2014-09-17: -29.9% over 18 days ($457 → $321)
+  2014-10-19: -20.1% over 60 days ($390 → $311)
+  2014-11-19: -53.2% over 56 days ($381 → $178)
+  2014-12-20: -46.0% over 25 days ($330 → $178)
+  2015-01-26: -20.6% over 10 days ($273 → $217)
+  2015-03-02: -20.5% over 43 days ($276 → $219)
+  2015-07-05: -22.6% over 50 days ($272 → $210)
+  2015-08-05: -25.3% over 19 days ($282 → $210)
+  2015-11-03: -22.9% over 8 days ($403 → $311)
+  2015-12-15: -21.7% over 31 days ($465 → $364)
+  2016-06-13: -22.3% over 50 days ($704 → $547)
+  2016-12-28: -20.3% over 14 days ($976 → $778)
+  2017-02-24: -20.1% over 28 days ($1174 → $938)
+  2017-05-24: -21.0% over 53 days ($2444 → $1930)
+  2017-06-24: -26.0% over 22 days ($2609 → $1930)
+  2017-08-13: -22.5% over 32 days ($4073 → $3155)
+  2017-11-08: -20.2% over 4 days ($7460 → $5950)
+  2017-12-09: -54.2% over 58 days ($15178 → $6955)
+  2018-01-09: -52.3% over 27 days ($14595 → $6955)
+  2018-02-09: -24.0% over 56 days ($8737 → $6636)
+  2018-03-12: -27.9% over 25 days ($9205 → $6636)
+  2018-04-14: -20.5% over 60 days ($7986 → $6350)
+  2018-05-15: -30.6% over 44 days ($8510 → $5903)
+  2018-07-24: -26.6% over 17 days ($8424 → $6185)
+  2018-09-20: -25.3% over 60 days ($6520 → $4871)
+  2018-10-21: -50.1% over 55 days ($6482 → $3237)
+  2018-11-21: -29.7% over 24 days ($4602 → $3237)
+  2019-06-26: -27.2% over 20 days ($13016 → $9478)
+  2019-08-01: -22.1% over 59 days ($10400 → $8104)
+  2019-09-01: -23.2% over 53 days ($9758 → $7493)
+  2019-10-25: -23.3% over 53 days ($8661 → $6641)
+  2020-01-12: -39.3% over 60 days ($8192 → $4971)
+  2020-02-12: -51.9% over 29 days ($10326 → $4971)
+  2021-01-07: -22.7% over 20 days ($39371 → $30433)
+  2021-02-21: -21.6% over 7 days ($57540 → $45138)
+  2021-03-24: -34.1% over 60 days ($52774 → $34771)
+  2021-04-24: -36.7% over 58 days ($50051 → $31677)
+  2021-05-25: -22.4% over 56 days ($38402 → $29807)
+  2021-09-05: -21.4% over 16 days ($51753 → $40694)
+  2021-10-15: -24.3% over 60 days ($61594 → $46613)
+  2021-11-15: -34.6% over 53 days ($63558 → $41558)
+  2021-12-16: -26.5% over 37 days ($47665 → $35030)
+  2022-03-10: -23.2% over 60 days ($39437 → $30297)
+  2022-04-10: -32.2% over 47 days ($42208 → $28628)
+  2022-05-11: -34.3% over 38 days ($28936 → $19018)
+  2022-06-11: -32.9% over 7 days ($28361 → $19018)
+  2022-07-28: -22.2% over 55 days ($23844 → $18547)
+  2022-09-10: -26.8% over 60 days ($21681 → $15881)
+  2022-10-25: -21.4% over 27 days ($20096 → $15787)
+  2023-07-13: -20.1% over 60 days ($31476 → $25163)
+  2024-03-13: -20.3% over 49 days ($73084 → $58254)
+  2024-05-20: -21.8% over 48 days ($71448 → $55849)
+
+Running LPPLS model every 7 days...
+  Progress: 0/484 (0.0%)
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 2.30e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.57e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: False
+Final cost: 1.93e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 7.41e+03
+Optimization success: True
+Final cost: 5.94e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.11e+03
+Optimization success: True
+Final cost: 4.24e+03
+Optimization success: True
+Final cost: 7.81e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 6.65e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 5.89e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 4.58e+03
+Optimization success: True
+Final cost: 3.62e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.32e+03
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 3.19e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.41e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.27e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.16e+03
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 8.55e+02
+Optimization success: True
+Final cost: 1.31e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: False
+Final cost: 1.42e+03
+  Progress: 20/484 (4.1%)
+Optimization success: True
+Final cost: 2.33e+03
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+Optimization success: True
+Final cost: 2.73e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 3.55e+03
+Optimization success: True
+Final cost: 3.38e+03
+Optimization success: True
+Final cost: 3.60e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.61e+03
+Optimization success: True
+Final cost: 4.65e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.12e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.85e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 4.97e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 5.65e+03
+Optimization success: True
+Final cost: 7.63e+03
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 5.49e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.56e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.84e+03
+Optimization success: True
+Final cost: 1.32e+03
+Optimization success: True
+Final cost: 3.24e+03
+Optimization success: True
+Final cost: 1.39e+04
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.44e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.59e+04
+  Progress: 40/484 (8.3%)
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 3.47e+04
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 4.49e+04
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 5.74e+04
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.21e+04
+Optimization success: False
+Final cost: 1.85e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 8.59e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 1.62e+04
+Optimization success: True
+Final cost: 1.75e+04
+Optimization success: False
+Final cost: 1.81e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 1.75e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.36e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.29e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 1.15e+04
+Optimization success: True
+Final cost: 1.28e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.02e+04
+Optimization success: False
+Final cost: 4.99e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 3.91e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 4.25e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 4.98e+03
+Optimization success: False
+Final cost: 4.23e+03
+  Progress: 60/484 (12.4%)
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.11e+03
+Optimization success: True
+Final cost: 2.22e+03
+Optimization success: True
+Final cost: 1.30e+03
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.53e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.55e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.82e+03
+Optimization success: True
+Final cost: 1.91e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 2.89e+04
+Optimization success: False
+Final cost: 1.69e+04
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+Optimization success: True
+Final cost: 2.82e+04
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.62e+04
+Optimization success: True
+Final cost: 5.46e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 8.80e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 9.04e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 9.41e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 9.51e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 7.71e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.47e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.78e+04
+Optimization success: True
+Final cost: 1.81e+04
+  Progress: 80/484 (16.5%)
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.57e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.53e+04
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.88e+04
+Optimization success: False
+Final cost: 1.35e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.87e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 3.51e+03
+Optimization success: False
+Final cost: 5.52e+03
+Optimization success: True
+Final cost: 8.22e+03
+Optimization success: True
+Final cost: 7.37e+03
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 7.45e+03
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 6.23e+03
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.04e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.04e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.25e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.25e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.13e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.05e+04
+Optimization success: True
+Final cost: 3.61e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 9.34e+04
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 7.97e+04
+  Progress: 100/484 (20.7%)
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+Optimization success: True
+Final cost: 1.00e+05
+Optimization success: True
+Final cost: 9.77e+04
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.33e+05
+Optimization success: True
+Final cost: 3.04e+05
+Optimization success: True
+Final cost: 1.89e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.90e+05
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 8.91e+04
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.05e+05
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.21e+05
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.25e+05
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.01e+05
+Optimization success: True
+Final cost: 9.35e+04
+Optimization success: False
+Final cost: 1.06e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 1.39e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.90e+05
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 2.22e+05
+Optimization success: True
+Final cost: 2.16e+05
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 1.08e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.52e+05
+Optimization success: True
+Final cost: 2.78e+06
+  Progress: 120/484 (24.8%)
+Optimization success: True
+Final cost: 6.10e+05
+Optimization success: True
+Final cost: 1.18e+06
+Optimization success: True
+Final cost: 9.17e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 9.83e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.06e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 1.18e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.44e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.34e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.71e+06
+Optimization success: True
+Final cost: 2.16e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.62e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 2.10e+06
+Optimization success: False
+Final cost: 2.32e+06
+Optimization success: True
+Final cost: 2.31e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.59e+06
+Optimization success: True
+Final cost: 2.48e+06
+Optimization success: True
+Final cost: 2.41e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: False
+Final cost: 2.36e+06
+Optimization success: True
+Final cost: 2.89e+06
+Optimization success: False
+Final cost: 2.92e+06
+  Progress: 140/484 (28.9%)
+Optimization success: True
+Final cost: 3.26e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 5.25e+06
+Optimization success: True
+Final cost: 1.26e+07
+Optimization success: True
+Final cost: 1.99e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 1.29e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 1.77e+07
+Optimization success: True
+Final cost: 5.57e+07
+Optimization success: True
+Final cost: 5.37e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 2.36e+08
+Optimization success: True
+Final cost: 5.79e+07
+Optimization success: True
+Final cost: 1.69e+08
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.62e+08
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.59e+08
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.51e+08
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 9.81e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 9.86e+07
+Optimization success: True
+Final cost: 5.34e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 6.97e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 5.04e+07
+Optimization success: True
+Final cost: 8.41e+07
+  Progress: 160/484 (33.1%)
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 9.30e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.46e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.89e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.35e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.92e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.75e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.62e+07
+Optimization success: True
+Final cost: 1.94e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 7.81e+06
+Optimization success: True
+Final cost: 6.83e+06
+Optimization success: True
+Final cost: 5.25e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.74e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 6.81e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 7.42e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 6.44e+06
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 5.37e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.80e+06
+Optimization success: True
+Final cost: 6.02e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 5.80e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 5.06e+06
+  Progress: 180/484 (37.2%)
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.69e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.50e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.05e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 6.45e+06
+Optimization success: True
+Final cost: 6.80e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 1.53e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 1.18e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 1.04e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 2.77e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 2.83e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 3.62e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.83e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.72e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 6.31e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 6.02e+05
+Optimization success: True
+Final cost: 3.73e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.93e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.89e+06
+Optimization success: True
+Final cost: 4.61e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 4.44e+06
+  Progress: 200/484 (41.3%)
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 4.81e+06
+Optimization success: True
+Final cost: 6.28e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 5.79e+06
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+Optimization success: True
+Final cost: 6.63e+06
+Optimization success: True
+Final cost: 3.82e+06
+Optimization success: False
+Final cost: 2.03e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.25e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 1.14e+06
+Optimization success: True
+Final cost: 5.92e+05
+Optimization success: True
+Final cost: 6.75e+05
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.48e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.14e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 5.91e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 5.66e+05
+Optimization success: True
+Final cost: 1.09e+06
+Optimization success: True
+Final cost: 9.98e+05
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 2.25e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.74e+06
+Optimization success: False
+Final cost: 1.31e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.71e+06
+  Progress: 220/484 (45.5%)
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.00e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.61e+07
+Optimization success: True
+Final cost: 9.59e+06
+Optimization success: True
+Final cost: 5.82e+06
+Optimization success: True
+Final cost: 5.60e+06
+Optimization success: True
+Final cost: 5.38e+06
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.74e+07
+Optimization success: True
+Final cost: 4.34e+07
+Optimization success: False
+Final cost: 1.05e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 2.41e+07
+Optimization success: False
+Final cost: 1.98e+07
+Optimization success: True
+Final cost: 2.15e+07
+Optimization success: False
+Final cost: 1.81e+07
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+Optimization success: True
+Final cost: 1.82e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: False
+Final cost: 2.26e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.32e+07
+Optimization success: True
+Final cost: 3.38e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.63e+07
+Optimization success: False
+Final cost: 1.56e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 2.03e+07
+  Progress: 240/484 (49.6%)
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.99e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.65e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.08e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 9.41e+06
+Optimization success: True
+Final cost: 1.20e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.01e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 1.28e+07
+Optimization success: True
+Final cost: 9.86e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 9.34e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 9.87e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 7.76e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 9.23e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 4.62e+06
+Optimization success: True
+Final cost: 6.52e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.87e+06
+Optimization success: True
+Final cost: 3.93e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+Optimization success: True
+Final cost: 2.04e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 2.18e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.69e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 4.12e+06
+  Progress: 260/484 (53.7%)
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 6.26e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 4.52e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.02e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.38e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.72e+07
+Optimization success: True
+Final cost: 2.04e+07
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 2.12e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.28e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.96e+07
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 3.32e+07
+Optimization success: True
+Final cost: 3.50e+07
+Optimization success: True
+Final cost: 3.61e+07
+Parameter fitting warnings:
+  ⚠️  tc hit upper bound (425.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 1.43e+07
+Optimization success: True
+Final cost: 5.21e+06
+Optimization success: True
+Final cost: 7.52e+06
+Optimization success: False
+Final cost: 5.75e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 9.87e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: False
+Final cost: 9.07e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 8.28e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.28e+06
+  Progress: 280/484 (57.9%)
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: False
+Final cost: 4.47e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: False
+Final cost: 3.03e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 2.24e+06
+Optimization success: True
+Final cost: 2.16e+06
+Parameter fitting warnings:
+  ⚠️  m hit lower bound (0.1)
+Optimization success: True
+Final cost: 5.44e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+Optimization success: True
+Final cost: 2.88e+06
+Parameter fitting warnings:
+  ⚠️  tc hit lower bound (70.0)
+Optimization success: True
+Final cost: 3.06e+06
+Parameter fitting warnings:
+  ⚠️  m hit upper bound (0.99)
+Optimization success: True
+Final cost: 4.73e+06
+Optimization success: False
+Final cost: 3.75e+06
+Optimization success: True
+Final cost: 7.16e+06
