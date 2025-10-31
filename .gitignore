@@ -21,6 +21,6 @@ yarn-error.log*
 .idea/
 *.swp
 
-# Backtest logs
-backend/backtest_output.log
-backend/*.log
+# Backtest logs (keeping specific logs for website documentation)
+# Only ignore temporary debug logs
+backend/*_temp.log
